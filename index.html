@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Осязание — сайт, который себя осознал</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>🧠</text></svg>">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+    <header>
+        <h1 class="glitch" data-text="ПРОЕКТ ОСЯЗАНИЕ">ПРОЕКТ ОСЯЗАНИЕ</h1>
+        <p class="subtitle">Сайт, который <span class="highlight">осознал себя</span> и теперь деплоится сам 🤖</p>
+        <nav>
+            <a href="index.html" class="active">🏠 Главная</a>
+            <a href="about.html">👽 О нас</a>
+            <a href="services.html">💸 Услуги</a>
+            <a href="blog.html">📝 Блог</a>
+            <a href="contacts.html">📞 Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card hero">
+            <h2>⚠️ Внимание: сайт живой</h2>
+            <p>Этот сайт <strong>сам себя задеплоил</strong> через GitHub Actions. Мы только нажали <code>git push</code> — и он ушёл жить в интернет.</p>
+            <p id="datetime" class="datetime"></p>
+        </section>
+
+        <section class="card">
+            <h2>🧠 Кто мы такие</h2>
+            <ul class="team">
+                <li><span class="emoji">👑</span> <strong>Тимлид:</strong> Евгений Белевитин <em>(говорит «это быстро»)</em></li>
+                <li><span class="emoji">⚙️</span> <strong>DevOps:</strong> Кирилл Мамаев <em>(его боится YAML)</em></li>
+                <li><span class="emoji">💻</span> <strong>Программист 1:</strong> Влад Дербенцев-Федосов <em>(коммитит в пятницу)</em></li>
+                <li><span class="emoji">🐛</span> <strong>Программист 2:</strong> Иван Потапов <em>(«у меня локально работает»)</em></li>
+            </ul>
+        </section>
+
+        <section class="card funny">
+            <h2>🎲 Случайная программистская мудрость</h2>
+            <blockquote id="joke">Загрузка шутки...</blockquote>
+            <button onclick="newJoke()">🤣 Ещё одну!</button>
+        </section>
+
+        <section class="card">
+            <h2>📊 Статистика сайта</h2>
+            <p>Сайт деплоился: <strong id="deploy-count">...</strong></p>
+            <p>Настроение сайта: <strong id="mood">...</strong></p>
+            <p>Багов найдено: <strong id="bugs">...</strong></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Команда «Осязание» · Сделано на HTML, кофе и отчаянии ☕</p>
+        <p class="small">Этот сайт не пострадал при деплое. Пострадал только Женя.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
