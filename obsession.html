@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обсессия: Никки и Беар (2026) — Тренажёр слепой печати</title>
+    <link rel="stylesheet" href="obsession.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>🩸</text></svg>">
+</head>
+<body>
+    <div class="blood-overlay"></div>
+    <div class="blood-drips"></div>
+
+    <header>
+        <h1 class="bloody-title" data-text="ОБСЕССИЯ">ОБСЕССИЯ</h1>
+        <p class="subtitle">Никки и Беар · <span class="blood-text">2026</span> · Психологическая драма</p>
+        <nav>
+            <a href="index.html">🏠 Главная</a>
+            <a href="about.html">👽 О нас</a>
+            <a href="services.html">🔥 Услуги</a>
+            <a href="blog.html">📝 Блог</a>
+            <a href="contacts.html">📞 Контакты</a>
+            <a href="obsession.html" class="active">🩸 Обсессия</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card film-intro">
+            <h2>🎬 О фильме</h2>
+            <p>«Обсессия: Никки и Беар» — психологическая драма 2026 года о тонкой грани между любовью и одержимостью. Никки — молодая художница, Беар — загадочный музыкант с тёмным прошлым. Их встреча в приморском городке запускает цепь событий, которая разрушает обоих.</p>
+            <p>Режиссёр использует холодные тона, длинные планы и тишину, чтобы передать внутреннее состояние героев. Фильм поднимает вопрос: где заканчивается любовь и начинается болезнь?</p>
+            <div class="gallery gallery-top">
+                <img src="obsession/images/obsession-00b-title.jpg" alt="Постер фильма Обсессия">
+                <img src="obsession/images/obsession-00a-poster.jpg" alt="Кадр из фильма: спальня">
+                <img src="obsession/images/obsession-01.jpg" alt="Никки и Беар на кровати">
+            </div>
+        </section>
+
+        <section class="card trainer">
+            <h2>⌨️ Тренажёр слепой печати</h2>
+            <p class="trainer-info">Выбери язык, длину и начни печатать. Таймер запустится при первом символе.</p>
+
+            <div class="controls">
+                <label>Язык:
+                    <select id="lang-select">
+                        <option value="ru">🇷🇺 Русский</option>
+                        <option value="en">🇬🇧 English</option>
+                    </select>
+                </label>
+                <label>Длина:
+                    <select id="len-select">
+                        <option value="short">Короткие (10 слов)</option>
+                        <option value="medium">Средние (50 слов)</option>
+                        <option value="long">Длинные (100 слов)</option>
+                    </select>
+                </label>
+                <button class="btn-blood" id="new-text">🔄 Новый текст</button>
+                <button class="btn-blood" id="start-typing">▶️ Начать</button>
+            </div>
+
+            <div class="stats">
+                <div>⏱ <span id="timer">0</span> сек</div>
+                <div>🎯 <span id="wpm">0</span> WPM</div>
+                <div>✅ <span id="accuracy">100</span> %</div>
+            </div>
+
+            <div class="text-display" id="target-text">
+                Нажми «Новый текст», чтобы начать...
+            </div>
+
+            <textarea id="user-input" placeholder="Печатай здесь..." disabled></textarea>
+            <div class="result" id="result"></div>
+        </section>
+
+        <section class="card gallery-section">
+            <h2>🩸 Кадры из фильма</h2>
+            <div class="gallery gallery-full">
+                <img src="obsession/images/obsession-02.jpg" alt="Постер">
+                <img src="obsession/images/obsession-03.jpg" alt="Улица">
+                <img src="obsession/images/obsession-04.jpg" alt="Бар">
+                <img src="obsession/images/obsession-05.webp" alt="Крик">
+                <img src="obsession/images/obsession-06.webp" alt="Свет">
+                <img src="obsession/images/obsession-07.jpg" alt="Смех">
+                <img src="obsession/images/obsession-08.jpg" alt="Кровь">
+                <img src="obsession/images/obsession-09.jpg" alt="Стул">
+                <img src="obsession/images/obsession-10.jpg" alt="Dream Edit">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Команда «Осязание» · Страница «Обсессия» создана Женей</p>
+        <p class="small">Все тексты для тренажёра — вымышленные, созданы для тренировки слепой печати.</p>
+    </footer>
+
+    <script src="obsession.js"></script>
+</body>
+</html>
