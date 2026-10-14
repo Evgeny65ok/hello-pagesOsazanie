@@ -42,6 +42,11 @@ graph LR
     D --> F[GitHub Pages]
     F --> G[Live site + CDN]
 ```
+## 📊 Скриншоты
+<img width="1785" height="992" alt="image" src="https://github.com/user-attachments/assets/9159bc3b-64f3-4ff2-9c21-b72f96d30a3d" />
+<img width="1686" height="895" alt="image" src="https://github.com/user-attachments/assets/81c1d4e0-56fb-42af-aefd-6eb9e43676fc" />
+<img width="1642" height="1020" alt="image" src="https://github.com/user-attachments/assets/30e55af1-5daa-44af-8ed6-c3dcf4a7e507" />
+<img width="1585" height="599" alt="image" src="https://github.com/user-attachments/assets/6cde2897-fd7b-483e-8b82-18b651842cc2" />
 
 ## 🎮 Пасхалка
 
