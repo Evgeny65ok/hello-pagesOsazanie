@@ -20,11 +20,11 @@
 ## 📄 Страницы
 
 - [x] 🏠 Главная (`index.html`) — Женя
-- [ ] 👽 О нас (`about.html`) — Кирилл
-- [ ] 💸 Услуги (`services.html`) — Влад
-- [ ] 📝 Блог (`blog.html`) — Влад
-- [ ] 📞 Контакты (`contacts.html`) — Иван
-
+- [x] 👽 О нас (`about.html`) — Кирилл
+- [x] 🔥 Услуги (`services.html`) — Влад
+- [x] 📝 Блог (`blog.html`) — Влад
+- [x] 📞 Контакты (`contacts.html`) — Иван
+- [x] 🩸 Обсессия (`obsession.html`) — Женя (тренажёр слепой печати, 60 текстов)
 ## 🛠 Стек
 
 - HTML5 + CSS3 + JavaScript (vanilla)
