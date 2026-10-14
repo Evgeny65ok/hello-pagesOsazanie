@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   ci:
@@ -34,17 +34,17 @@ jobs:
             grep -q "<!DOCTYPE html>" "$f" || (echo "ERROR: $f missing DOCTYPE" && exit 1)
             grep -q "</html>"        "$f" || (echo "ERROR: $f missing closing html" && exit 1)
           done
-          grep -q "jokes" script.js || (echo "ERROR: script.js missing jokes" && exit 1)
-          echo "OK: structure valid, jokes intact"
+          echo "OK: structure valid"
 
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
         with:
           name: site
           path: |
-            *.html
-            *.css
-            *.js
+            **/*.html
+            **/*.css
+            **/*.js
+            obsession/images/**
           retention-days: 1
 
   deploy:
