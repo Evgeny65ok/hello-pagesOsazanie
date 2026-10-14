@@ -68,7 +68,7 @@ function initGame() {
         gameActive = true;
         document.getElementById('score').textContent = '0';
         document.getElementById('time').textContent = '10';
-        document.getElementById('game-message').textContent = '🔥 Жми на кнопку со всей силы!';
+        document.getElementById('game-message').textContent = '🔥 ЖМИ на кнопку со всей силы!';
 
         timer = setInterval(() => {
             timeLeft--;
