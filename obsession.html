@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обсессия: Никки и Беар (2026) — Тренажёр слепой печати</title>
+    <link rel="stylesheet" href="obsession.css">
+    <link rel="icon" href="�</text></svg>">
+</head>
+<body>
+        <div class="floating-bg" aria-hidden="true">
+        <div class="blood-bubbles" id="blood-bubbles"></div>
+        <img src="obsession/images/obsession-01.jpg" class="float-img f1" alt="">
+        <img src="obsession/images/obsession-02.jpg" class="float-img f2" alt="">
+        <img src="obsession/images/obsession-03.jpg" class="float-img f3" alt="">
+        <img src="obsession/images/obsession-04.jpg" class="float-img f4" alt="">
+        <img src="obsession/images/obsession-05.webp" class="float-img f5" alt="">
+        <img src="obsession/images/obsession-06.webp" class="float-img f6" alt="">
+        <img src="obsession/images/obsession-07.jpg" class="float-img f7" alt="">
+        <img src="obsession/images/obsession-08.jpg" class="float-img f8" alt="">
+        <img src="obsession/images/obsession-09.jpg" class="float-img f9" alt="">
+        <img src="obsession/images/obsession-10.jpg" class="float-img f10" alt="">
+    </div>
+    <div class="blood-overlay"></div>
+    <div class="blood-drips"></div>
+
+    <header>
+        <h1 class="bloody-title" data-text="ОБСЕССИЯ">ОБСЕССИЯ</h1>
+        <p class="subtitle">Никки и Беар · <span class="blood-text">2026</span> · Психологическая драма</p>
+        <nav>
+            <a href="index.html">🏠 Главная</a>
+            <a href="about.html">👽 О нас</a>
+            <a href="services.html">🔥 Услуги</a>
+            <a href="blog.html">📝 Блог</a>
+            <a href="contacts.html">📞 Контакты</a>
+            <a href="obsession.html" class="active">🩸 Обсессия</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card film-intro">
+            <h2>🎬 О фильме</h2>
+            <p>«Обсессия: Никки и Беар» — психологическая драма 2026 года о тонкой грани между любовью и одержимостью. Никки — молодая художница, Беар — загадочный музыкант с тёмным прошлым. Их встреча в приморском городке запускает цепь событий, которая разрушает обоих.</p>
+            <div class="gallery gallery-top">
+                <img src="obsession/images/obsession-00b-title.jpg" alt="Постер">
+                <img src="obsession/images/obsession-00a-poster.jpg" alt="Спальня">
+                <img src="obsession/images/obsession-01.jpg" alt="Никки и Беар">
+            </div>
+        </section>
+
+        <section class="card trainer">
+            <h2>⌨️ Тренажёр слепой печати</h2>
+            <p class="trainer-info">Выбери язык и длину, нажми «Новый текст» — и печатай прямо по тексту. Ошибки подсветятся красным автоматически.</p>
+
+            <div class="controls">
+                <label>Язык:
+                    <select id="lang-select">
+                        <option value="ru">🇷🇺 Русский</option>
+                        <option value="en">🇬🇧 English</option>
+                    </select>
+                </label>
+                <label>Длина:
+                    <select id="len-select">
+                        <option value="short">Короткие (10 слов)</option>
+                        <option value="medium">Средние (50 слов)</option>
+                        <option value="long">Длинные (100 слов)</option>
+                    </select>
+                </label>
+                <button class="btn-blood" id="new-text">🔄 Новый текст</button>
+            </div>
+
+            <div class="stats">
+                <div>⏱ <span id="timer">0</span> сек</div>
+                <div>🎯 <span id="wpm">0</span> WPM</div>
+                <div>✅ <span id="accuracy">100</span> %</div>
+            </div>
+            <p id="best-score" style="color: #ffd60a; margin-top: 10px; font-weight: bold; text-align: center;">🏆 Рекордов пока нет</p>
+            <div style="display:none;">
+            </div>
+
+            <div class="text-display interactive" id="target-text" tabindex="0">
+                Нажми «Новый текст» — и начни печатать прямо здесь...
+            </div>
+            <input type="text" id="hidden-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="position:absolute;left:-9999px;opacity:0;">
+
+            </section>
+
+        <section class="card gallery-section">
+            <h2>🩸 Кадры из фильма</h2>
+            <div class="gallery gallery-full">
+                <img src="obsession/images/obsession-02.jpg" alt="">
+                <img src="obsession/images/obsession-03.jpg" alt="">
+                <img src="obsession/images/obsession-04.jpg" alt="">
+                <img src="obsession/images/obsession-05.webp" alt="">
+                <img src="obsession/images/obsession-06.webp" alt="">
+                <img src="obsession/images/obsession-07.jpg" alt="">
+                <img src="obsession/images/obsession-08.jpg" alt="">
+                <img src="obsession/images/obsession-09.jpg" alt="">
+                <img src="obsession/images/obsession-10.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Команда «Осязание» · Страница «Обсессия» создана Женей</p>
+        <p class="small">Все тексты для тренажёра — вымышленные, созданы для тренировки слепой печати.</p>
+    </footer>
+
+    <!-- Модальное окно результата -->
+    <div class="result-modal" id="result-modal">
+        <div class="result-card" id="result-card">
+            <div class="result-blood-top"></div>
+            <h2 class="result-title">РЕЗУЛЬТАТ</h2>
+            <div class="result-photo">
+                <img id="result-photo-img" src="" alt="Никки">
+            </div>
+            <div class="result-stats">
+                <div class="result-stat"><span id="r-wpm">0</span><small>WPM</small></div>
+                <div class="result-stat"><span id="r-accuracy">0</span><small>ТОЧНОСТЬ</small></div>
+                <div class="result-stat"><span id="r-time">0</span><small>СЕК</small></div>
+                <div class="result-stat"><span id="r-chars">0</span><small>СИМВОЛОВ</small></div>
+            </div>
+            <p class="result-joke" id="result-joke">— загрузка шутки —</p>
+            <div class="result-buttons">
+                <button class="btn-blood" id="btn-screenshot">📸 Скриншот</button>
+                <button class="btn-blood" id="btn-close">🔁 Ещё раз</button>
+            </div>
+            <div class="result-blood-bottom"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="obsession.js"></script>
+</body>
+</html>
